@@ -1,7 +1,7 @@
-
 public class BankAccount {
 
 
+  public static BankAccount otherAccount;
   public double accountBalance;
   public String name;
   public int accountN;
@@ -45,9 +45,9 @@ public class BankAccount {
       return this.accountN;
   }
 
-  public void transfer(BankAccount x, double sum){
+  public void transfer(BankAccount otherAccount, double sum){
       accountBalance -= sum;
-      accountBalance += sum;
+      otherAccount.accountBalance += sum;
   }
 
   @Override

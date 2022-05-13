@@ -7,7 +7,19 @@ public class Animal {
        this.name = name;
        this.dog = dog;
    }
-   
+
+    public  Animal(String name) {
+    this.name = name;
+    }
+
+    public Animal(Boolean dog){
+    this.dog = dog;
+    }
+
+    public Animal(){
+
+    }
+
    public String getName(){
        return name;
    }
